@@ -1,20 +1,3 @@
-#!/bin/sh
-
-# $1 Path to the new version.
-# $2 Path to the old version.
-
-set -x
-set -e
-
-# if called from the external_updater, change to the new dir first
-if [ "$1" != "" ]; then
-    cd "$1"
-fi
-
-autoreconf -i && ./configure --disable-shared
-
-# if called from the external_updater, do not apply any patches as it will do
-# that for us, otherwise do if there are any
-if [ "$2" == "" -a -d patches/ ]; then
-    git apply patches/*
-fi
+version https://git-lfs.github.com/spec/v1
+oid sha256:f27d802c490242adaee93d1c454a67ea5379217d991426ccb12f0e24024cb036
+size 430

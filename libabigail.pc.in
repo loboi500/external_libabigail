@@ -1,11 +1,3 @@
-prefix=@prefix@
-exec_prefix=@exec_prefix@
-libdir=@libdir@
-includedir=@includedir@
-
-Name: libabigail
-Description: The ABI Generic Analysis and Instrumentation Library
-Version: @VERSION@
-Requires.private: libxml-2.0 >= @LIBXML2_VERSION@
-Libs: -L${libdir} -labigail
-Cflags: -I${includedir}/libabigail
+version https://git-lfs.github.com/spec/v1
+oid sha256:523e2117f2a30a552df1cbed2717d6965afdefdcf7a524cd24ecb0e486d1d132
+size 298
